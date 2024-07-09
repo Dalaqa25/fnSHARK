@@ -1,7 +1,7 @@
 ﻿using API.Dtos;
 using API.models;
 
-namespace API
+namespace API.Mapper
 {
     public static class StockMapper
     {
