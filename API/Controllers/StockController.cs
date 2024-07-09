@@ -1,5 +1,7 @@
 ﻿
 using API.data;
+using API.Mapper;
+using API.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -36,6 +38,15 @@ namespace API.Controllers
             }
 
             return Ok(stock.ToStockDto());
+        }
+
+        [HttpPost]
+        public IActionResult create([FromBody] CreateStockDto stockDto)
+        {
+            var stockModel = stockDto.ToStockFromCreateDTO();
+            _context.Stock.Add(stockModel);
+            _context.SaveChanges();
+            return CreatedAtAction(nameof(GetById), new {id = stockModel.Id}, stockModel.ToStockDto());
         }
 
     }
