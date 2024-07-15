@@ -1,6 +1,7 @@
 using API.data;
 using API.Interface;
 using API.Rebository;
+using API.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,7 @@ builder.Services.AddDbContext<AppliactionDBcontext>(options => {
 });
 
 builder.Services.AddScoped<IStockRepository, CreateStockRepo>();
+builder.Services.AddScoped<ICommentRepository, CreateCommentRepo>();
 
 var app = builder.Build();
 
