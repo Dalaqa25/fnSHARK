@@ -4560,22 +4560,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\API\\API.csproj",
+      "projectUniqueName": "C:\\users\\giorgi\\source\\repos\\fnShark\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\API\\API.csproj",
+      "projectPath": "C:\\users\\giorgi\\source\\repos\\fnShark\\API\\API.csproj",
       "packagesPath": "C:\\Users\\giorgi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\API\\obj\\",
+      "outputPath": "C:\\users\\giorgi\\source\\repos\\fnShark\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\giorgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\giorgi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4643,7 +4640,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

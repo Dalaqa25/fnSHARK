@@ -12,11 +12,9 @@ namespace API.Repository
     public class CreateCommentRepo : ICommentRepository
     {
         private readonly AppliactionDBcontext _context;
-        private readonly ICommentRepository _commnet;
-        public CreateCommentRepo(AppliactionDBcontext context,ICommentRepository commentRepo)
+        public CreateCommentRepo(AppliactionDBcontext context)
         {
             _context = context;
-            _commnet = commentRepo;
         }
         public async Task<List<Comment>> GetAllAsync()
         {

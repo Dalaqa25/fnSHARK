@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6twQ6ZuzAic=",
+  "dgSpecHash": "TqlPwR4b09g=",
   "success": true,
-  "projectFilePath": "C:\\users\\giorgi\\source\\repos\\fnShark\\api\\API.csproj",
+  "projectFilePath": "C:\\users\\giorgi\\source\\repos\\fnShark\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\giorgi\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\giorgi\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
