@@ -14,8 +14,9 @@ namespace API.models
         public decimal LastDiv {get;set;}
         public string Industry {get;set;} = string.Empty;
         public long MarketCap {get;set;}
+        
         //navigation between models
-         public List<Comment> Comments { get; set; } = new List<Comment>();
+         public List<Comment> Commnet { get; set; } = new List<Comment>();
 
     }
 }
