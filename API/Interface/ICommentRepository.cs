@@ -7,6 +7,7 @@ namespace API.Interface
     {
         Task<List<Comment>> GetAllAsync();
         Task<Comment?> GetByIdAsync(int id);
+        Task<bool> StockExistsAsync(int StockId);
+        Task<Comment> CreateAsync(Comment comment);
     }
-
 }

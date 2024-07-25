@@ -1,5 +1,6 @@
 ﻿
 using API.data;
+using API.Dtos;
 using API.Interface;
 using API.Mapper;
 using Microsoft.AspNetCore.Mvc;
@@ -38,6 +39,19 @@ namespace API.Controllers
             }
 
             return Ok(commnet.ToCommentDto());
+        }
+
+        [HttpPost("{StockId}")]
+        public async Task<IActionResult> Create([FromRoute] int StockId, CreateCommnetDto commnetDto)
+        {
+            if(! await _commentrepo.StockExistsAsync(StockId))
+            {
+                return BadRequest("Not Found!");
+            }
+
+            var commentModel = commnetDto.ToCommetFromCreate(StockId);
+            await _commentrepo.CreateAsync(commentModel);
+            return CreatedAtAction(nameof(GetById), new {id = commentModel}, commentModel.ToCommentDto());
         }
     }
 
