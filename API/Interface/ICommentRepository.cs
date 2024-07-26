@@ -10,5 +10,6 @@ namespace API.Interface
         Task<bool> StockExistsAsync(int StockId);
         Task<Comment> CreateAsync(Comment comment);
         Task<Comment?> UpdateAsync(int Id, UpdateCommentsDto updateCommentsDto);
+        Task<Comment?> DeleteAsync(int Id);
     }
 }
