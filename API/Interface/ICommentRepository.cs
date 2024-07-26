@@ -1,4 +1,4 @@
-﻿
+﻿using API.Dtos;
 using API.models;
 
 namespace API.Interface
@@ -9,5 +9,6 @@ namespace API.Interface
         Task<Comment?> GetByIdAsync(int id);
         Task<bool> StockExistsAsync(int StockId);
         Task<Comment> CreateAsync(Comment comment);
+        Task<Comment?> UpdateAsync(int Id, UpdateCommentsDto updateCommentsDto);
     }
 }

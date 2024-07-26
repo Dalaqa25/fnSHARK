@@ -12,7 +12,7 @@ namespace API.Controllers
     {
         private readonly AppliactionDBcontext _context;
         private readonly ICommentRepository _commentrepo;
-        public CommentController(AppliactionDBcontext context,ICommentRepository comment)
+        public CommentController(AppliactionDBcontext context, ICommentRepository comment)
         {
             _context = context;
             _commentrepo = comment;
@@ -44,14 +44,28 @@ namespace API.Controllers
         [HttpPost("{StockId}")]
         public async Task<IActionResult> Create([FromRoute] int StockId, CreateCommnetDto commnetDto)
         {
-            if(! await _commentrepo.StockExistsAsync(StockId))
+            if (!await _commentrepo.StockExistsAsync(StockId))
             {
                 return BadRequest("Not Found!");
             }
 
             var commentModel = commnetDto.ToCommetFromCreate(StockId);
             await _commentrepo.CreateAsync(commentModel);
-            return CreatedAtAction(nameof(GetById), new {id = commentModel}, commentModel.ToCommentDto());
+            return CreatedAtAction(nameof(GetById), new { id = commentModel.Id }, commentModel.ToCommentDto());
+        }
+
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<IActionResult> UpdateAsync([FromRoute] int id, UpdateCommentsDto updateCommentsDto)
+        {
+            var commentModel = await _commentrepo.UpdateAsync(id,updateCommentsDto);
+
+            if (commentModel == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(commentModel.ToCommentDto());
         }
     }
 
