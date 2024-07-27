@@ -7,6 +7,7 @@ using API.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API.models;
+using API.Helpers;
 
 
 namespace API.Controllers
@@ -24,12 +25,12 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAllAsync([FromQuery] StockQuery stockQuery)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var stocks = await _stockrepo.GetAllAsync();
+            var stocks = await _stockrepo.GetAllAsync(stockQuery);
             var stockDtos = stocks.Select(s => s.ToStockDto());
 
             return Ok(stocks);

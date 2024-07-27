@@ -5,6 +5,7 @@ using API.models;
 using API.data;
 using Microsoft.EntityFrameworkCore;
 using API.Dtos.Stock;
+using API.Helpers;
 
 namespace API.Rebository
 {
@@ -37,10 +38,24 @@ namespace API.Rebository
             return stockModel;
         }
 
-        public async Task<List<Stock>> GetAllAsync()
+        public async Task<List<Stock>> GetAllAsync(StockQuery stockQuery)
         {
-            return await _context.Stock.Include(c => c.Commnet).ToListAsync();
+            var stockModel = _context.Stock.Include(c => c.Commnet).AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(stockQuery.CompanyName))
+            {
+                stockModel = stockModel.Where(s => s.CompanyName.Contains(stockQuery.CompanyName));
+            }
+            
+            if (!string.IsNullOrWhiteSpace(stockQuery.Symbol))
+            {
+                stockModel = stockModel.Where(s => s.Symbol.Contains(stockQuery.Symbol));
+            }
+
+
+            return await stockModel.ToListAsync();
         }
+        
 
         public async Task<Stock?> GetByIdAsync(int id)
         {
