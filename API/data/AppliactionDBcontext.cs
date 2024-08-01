@@ -1,10 +1,12 @@
 ﻿
 using API.models;
+using API.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.data
 {
-    public class AppliactionDBcontext : DbContext
+    public class AppliactionDBcontext : IdentityDbContext<AppUser>
     {
         public AppliactionDBcontext(DbContextOptions dbContextOptions)
         :base(dbContextOptions)
