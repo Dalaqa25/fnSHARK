@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\API\\API.csproj": {}
+    "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\API\\API.csproj": {
+    "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\API\\API.csproj",
+        "projectPath": "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\api\\API.csproj",
         "packagesPath": "C:\\Users\\giorgi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\API\\obj\\",
+        "outputPath": "C:\\Users\\giorgi\\source\\repos\\fnSHARK\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\giorgi\\AppData\\Roaming\\NuGet\\NuGet.Config"
