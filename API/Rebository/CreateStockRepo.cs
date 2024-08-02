@@ -52,8 +52,10 @@ namespace API.Rebository
                 stockModel = stockModel.Where(s => s.Symbol.Contains(stockQuery.Symbol));
             }
 
+            var skipNumber = (stockQuery.PageNumber - 1) * stockQuery.PageSize;
 
-            return await stockModel.ToListAsync();
+
+            return await stockModel.Skip(skipNumber).Take(stockQuery.PageSize).ToListAsync();
         }
         
 

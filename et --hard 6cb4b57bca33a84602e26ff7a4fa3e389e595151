@@ -1,0 +1,119 @@
+[33mcommit f5b508bed8c7e94fc6855e1a9638fb33b6a1e8ac[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Thu Aug 1 10:18:55 2024 +0400
+
+    WJT
+
+[33mcommit 0f51830f2fa008e03341a075a743bf9c013f096f[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Tue Jul 30 17:30:22 2024 +0400
+
+    changes
+
+[33mcommit f28701444a162f38e9e18bbc1cc1aa6ed412c76b[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Sun Jul 28 19:32:25 2024 +0400
+
+    Pagination!
+
+[33mcommit 6cb4b57bca33a84602e26ff7a4fa3e389e595151[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Sat Jul 27 10:01:47 2024 +0400
+
+    Filtering
+
+[33mcommit ed4ef9fa07e3838a769c202bd552968eab3566f7[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Fri Jul 26 17:20:54 2024 +0400
+
+    Vaild Data
+
+[33mcommit ebc6b867ee241d9c0dadd22a69efe3803350a76c[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Fri Jul 26 16:06:06 2024 +0400
+
+    DeleteAsync
+
+[33mcommit 9e48592decc1014004de349b4a33a66036f3c32a[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Fri Jul 26 15:32:44 2024 +0400
+
+    UpdateAsync
+
+[33mcommit 0d8d2de87353a5741a5dfe171b603158a4eb76d4[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Thu Jul 25 12:53:37 2024 +0400
+
+    One to many relationsShip
+
+[33mcommit fd13a46ac94b0b6040c36273d3fc901227117023[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Wed Jul 24 14:15:55 2024 +0400
+
+    Inculde
+
+[33mcommit 09671348b83345ec749291ac67d68536bd3fd801[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Tue Jul 16 12:00:57 2024 +0400
+
+    git changes
+
+[33mcommit 9eea25a09f89c39822bf222f7e85f81db5ac47d4[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Tue Jul 16 10:43:52 2024 +0400
+
+    changes
+
+[33mcommit 258a79c121d8227aff36290b30d22d60d694af93[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Tue Jul 16 00:09:21 2024 +0400
+
+    Commnet Controller Created
+
+[33mcommit 256d54c98c4b3f47721b9d101a1cf43d69f431c5[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Mon Jul 15 16:55:44 2024 +0400
+
+    interface
+
+[33mcommit f7b00b32a7df5298f28735d049d709db111b2b0f[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Tue Jul 9 11:38:12 2024 +0400
+
+    CreateRequset
+
+[33mcommit ecb1f47536038e3c5b4dd8389e74a7701524be39[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Tue Jul 9 10:31:32 2024 +0400
+
+    Mapper added
+
+[33mcommit 9674a5274a10522da1c981a88a5281ea06fbf585[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Mon Jul 8 06:26:03 2024 +0400
+
+    adding Dtos
+
+[33mcommit 20bd3acf4382c0f1fd8c199f49f5185485e9f43f[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Mon Jul 8 05:31:26 2024 +0400
+
+    modified
+
+[33mcommit 5351cd79887965e6a924abe5e08899c2ffec367f[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Sun Jul 7 12:07:06 2024 +0400
+
+    database created!
+
+[33mcommit 61734c129811fe80e0aee17c94ebc12d19b6a581[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Sun Jul 7 10:42:27 2024 +0400
+
+    first commit
+
+[33mcommit b86f6b7ef9b5c3823b2698f1229efa911b097d51[m
+Author: dalaqa25 <g.dalaqishvili01@gmail.com>
+Date:   Sun Jul 7 10:41:14 2024 +0400
+
+    first commit
