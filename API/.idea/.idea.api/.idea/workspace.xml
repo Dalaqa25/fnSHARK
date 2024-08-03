@@ -10,6 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="341ccbe4-1e56-4486-a6d9-d10b76f92a6f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.api/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controllers/RegisterController.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Dtos/RegisterDto/RegisterDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.idea.fnSHARK/.idea/.gitignore" beforeDir="false" />
@@ -145,7 +150,7 @@
       <workItem from="1722624408670" duration="1585000" />
       <workItem from="1722664551744" duration="789000" />
       <workItem from="1722665360212" duration="116000" />
-      <workItem from="1722665487732" duration="4110000" />
+      <workItem from="1722665487732" duration="4426000" />
     </task>
     <servers />
   </component>
@@ -170,7 +175,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="Register" />
                       </list>
                     </value>
                   </entry>
