@@ -1,22 +1,57 @@
+using API.Dtos;
 using API.Dtos.RegisterDto;
+using API.Interface;
 using API.Models;
+using API.Services;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
     [Route("API/register")]
     [ApiController]
-    public class RegisterController : ControllerBase
+    public class AccountController : ControllerBase
     {
         private readonly UserManager<AppUser> _userManager;
-        
-        public RegisterController(UserManager<AppUser> userManager)
+        private readonly ITokenInterface _tokenService;
+        private readonly SignInManager<AppUser> _signInManager;
+        public AccountController(UserManager<AppUser> userManager, ITokenInterface tokenService, SignInManager<AppUser> signInManager)
         {
             _userManager = userManager;
+            _tokenService = tokenService;
+            _signInManager = signInManager;
         }
+
+        
+        //HttpPost for Login
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(LoginDto loginDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var userCheck = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == loginDto.UserName.ToLower());
+            if (userCheck == null) return Unauthorized("Invalid Username!");
+
+            var passwordCheck = await _signInManager.CheckPasswordSignInAsync(userCheck, loginDto.Password, false);
+            if (!passwordCheck.Succeeded) return Unauthorized("UserName not found or/and password!");
+
+            return Ok(
+                new NewUserDto()
+                {
+                    UserName = userCheck.UserName,
+                    Email = userCheck.Email,
+                    Token = _tokenService.CreateToken(userCheck)
+                }
+            );
+        }
+        
+        
+
+        //HttpPost for Registration
         [HttpPost("register")]
         public async Task<IActionResult> Create([FromBody] RegisterDto registerDto)
         {
@@ -43,7 +78,7 @@ namespace API.Controllers
                     var roleResult = await _userManager.AddToRoleAsync(appUser, "User");
                     if (roleResult.Succeeded)
                     {
-                        return Ok("User Created");
+                        return Ok("Congratulations! User Created");
                     }
                     else
                     {

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API.models;
 using API.Helpers;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace API.Controllers
@@ -25,6 +26,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllAsync([FromQuery] StockQuery stockQuery)
         {
             if (!ModelState.IsValid)
